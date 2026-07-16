@@ -1,4 +1,5 @@
 package com.example.laundryapp3469.view
 
-class HomeFragment {
+import androidx.fragment.app.Fragment
+class HomeFragment : Fragment() {
 }
