@@ -29,6 +29,12 @@ class WelcomeActivity : AppCompatActivity() {
         username = SetData.sharedPreferences.getString(SetData.USERNAME_KEY, null)
         password = SetData.sharedPreferences.getString(SetData.PASSWORD_KEY, null)
 
+        val btnDaftar = findViewById<com.google.android.material.button.MaterialButton>(R.id.btnRegristerPage)
+        btnDaftar.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
         val btnLoginPage = findViewById<com.google.android.material.button.MaterialButton>(R.id.btnLoginPage)
         //event pindah halaman ke login page (Intent Explicit)
         btnLoginPage.setOnClickListener {
